@@ -1,4 +1,4 @@
 package com.example.recyclerview
 
-class Model {
+class Model(val title:String , des:String,val image : Int) {
 }
