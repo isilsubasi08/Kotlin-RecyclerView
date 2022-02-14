@@ -32,6 +32,8 @@ class MyAdapter (val arrayList: ArrayList<Model> , val context : Context) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindItems(arrayList[position])
 
+
+
         holder.itemView.setOnClickListener {
             if (position == 0){
                 Toast.makeText(context,"İcon1",Toast.LENGTH_SHORT).show()
@@ -49,10 +51,21 @@ class MyAdapter (val arrayList: ArrayList<Model> , val context : Context) :
 
         }
 
+
+
     }
+
+    fun deleteItem(pos : Int){
+        arrayList.removeAt(pos)
+        notifyItemRemoved(pos)
+    }
+
+
 
     override fun getItemCount(): Int {
         return arrayList.size
     }
+
+
 
 }
