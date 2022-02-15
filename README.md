@@ -1,3 +1,6 @@
-# Drag & Drop n' Swipe Recyclerview
+# Example of using ItemTouchHelper
 
-![screen](https://github.com/isilay-subasi/Kotlin-RecyclerView/blob/main/images/screen.PNG)
+- Kotlin
+- Drag and swipe items with RecyclerView
+
+![screen](https://github.com/isilay-subasi/Kotlin-RecyclerView/blob/main/images/swipe-drag-drop.gif)
